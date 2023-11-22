@@ -21,14 +21,14 @@ pub mod fileapi {
     ///
     /// create a new FileAPI instance:
     /// ```no_run
-    /// use self::file_api::fileapi::FileAPI;
+    /// use self::simple_file_manager::fileapi::FileAPI;
     ///
     /// let file = FileAPI::from("filename.gph");
     /// ```
     ///
     /// collect a [Reader] type (same with [Builder], [Changer]):
     /// ```no_run
-    /// use self::file_api::fileapi::FileAPI;
+    /// use self::simple_file_manager::fileapi::FileAPI;
     ///
     /// // custom the split character.
     /// let file = FileAPI::from("filename.gph").split(',');
@@ -55,7 +55,7 @@ pub mod fileapi {
         ///
         /// create a new FileAPI instance:
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// ```
@@ -70,7 +70,7 @@ pub mod fileapi {
         /// # Example
         ///
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph").split(',');
         /// // the values will divided by ','.
@@ -91,7 +91,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let reader = file.reader();
@@ -111,7 +111,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Changer] type (same with [Builder], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph").split(',');
         /// let changer = file.changer();
@@ -132,7 +132,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Builder] type (same with [Changer], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let mut builder = file.builder();
@@ -154,7 +154,7 @@ pub mod fileapi {
         /// # Example
         ///
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// FileAPI::from("filename.gph").remove();
         /// ```
@@ -167,7 +167,7 @@ pub mod fileapi {
         /// # Example
         ///
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// if file.is_exist() {
@@ -193,7 +193,7 @@ pub mod fileapi {
     /// # Example
     /// collect a [Reader] type (same with [Builder], [Changer]):
     /// ```no_run
-    /// use self::file_api::fileapi::FileAPI;
+    /// use self::simple_file_manager::fileapi::FileAPI;
     ///
     /// let file = FileAPI::from("filename.gph");
     /// let reader = file.reader();
@@ -223,7 +223,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let reader = file.reader();
@@ -242,7 +242,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph").split(',');
         /// let reader = file.reader();
@@ -271,7 +271,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph").split(',');
         /// let reader = file.reader();
@@ -297,7 +297,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let reader = file.reader();
@@ -329,7 +329,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let reader = file.reader();
@@ -352,7 +352,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Reader] type (same with [Builder], [Changer]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let reader = file.reader();
@@ -398,7 +398,7 @@ pub mod fileapi {
         ///
         /// # Example
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let len = FileAPI::from("filename.gph").reader().count_lines();
         ///
@@ -412,7 +412,7 @@ pub mod fileapi {
         ///
         /// # Example
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// // read the specific row of the csv file.
         /// let row = FileAPI::from("filename.gph").reader().read_csv::<usize>(5);
@@ -441,7 +441,7 @@ pub mod fileapi {
     /// # Example
     /// collect a [Changer] type (same with [Builder], [Reader]):
     /// ```no_run
-    /// use self::file_api::fileapi::FileAPI;
+    /// use self::simple_file_manager::fileapi::FileAPI;
     ///
     /// let file = FileAPI::from("filename.gph");
     /// let changer = file.changer();
@@ -472,7 +472,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Changer] type (same with [Builder], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let changer = file.changer();
@@ -498,7 +498,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Changer] type (same with [Builder], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let changer = file.changer();
@@ -524,7 +524,7 @@ pub mod fileapi {
     /// # Example
     /// collect a [Builder] type (same with [Changer], [Reader]):
     /// ```no_run
-    /// use self::file_api::fileapi::FileAPI;
+    /// use self::simple_file_manager::fileapi::FileAPI;
     ///
     /// let file = FileAPI::from("filename.gph");
     /// let mut builder = file.builder();
@@ -554,7 +554,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Builder] type (same with [Changer], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let mut builder = file.builder();
@@ -577,7 +577,7 @@ pub mod fileapi {
         /// # Example
         /// collect a [Builder] type (same with [Changer], [Reader]):
         /// ```no_run
-        /// use self::file_api::fileapi::FileAPI;
+        /// use self::simple_file_manager::fileapi::FileAPI;
         ///
         /// let file = FileAPI::from("filename.gph");
         /// let mut builder = file.builder();

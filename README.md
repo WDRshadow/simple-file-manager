@@ -1,7 +1,7 @@
-# FileAPI
+# Simple-File-Manager
 
 ### This is an API for modifying the general data files.
 
-**Author: @_Yunhao Xu_**
+**Author: @_WDRshadow_**
 
-**Version: v1.0.0**
+**Version: v0.1.0**

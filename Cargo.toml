@@ -1,6 +1,6 @@
 [package]
-name = "file-api"
-version = "1.0.0"
+name = "simple-file-manager"
+version = "0.1.0"
 edition = "2021"
 
 authors = ["WDRshadow <i@wdr.im>"]
